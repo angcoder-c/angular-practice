@@ -1,1 +1,12 @@
-<p>list-strings works!</p>
+<h2>Lista de strings</h2>
+<div>
+    <ul>
+        @for (item of lsStrings; track $index) {
+            <li>{{ item }}</li>
+        }
+    </ul>
+    <form [formGroup]="stringControls" (ngSubmit)="addString()">
+        <input type="text" formControlName="newString">
+        <button type="submit">Insertar</button>
+    </form>
+</div>
