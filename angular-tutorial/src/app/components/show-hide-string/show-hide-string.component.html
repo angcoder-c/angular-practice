@@ -1,0 +1,22 @@
+<h2>Mostrar / Ocultar texto</h2>
+<div>
+    <span>
+        @if (buttonState) {
+            {{ word }}
+        } @else {
+            {{ hideWord }}
+        }
+    </span>
+    <button (click)="changeButtonState()">
+        @if (buttonState) {
+            Ocultar
+        } @else {
+            Mostrar
+        }
+    </button>
+
+    <form [formGroup]="inputGroup" (ngSubmit)="updateWord()">
+        <input type="text" formControlName="word">
+        <button type="submit">Insertar</button>
+    </form>
+</div>
