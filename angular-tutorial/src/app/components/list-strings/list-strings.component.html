@@ -1,12 +1,12 @@
-<h2>Lista de strings</h2>
+<h2>Lista de tareas</h2>
 <div>
     <ul>
-        @for (item of lsStrings; track $index) {
-            <li>{{ item }}</li>
+        @for (item of tasks; track item.id) {
+            <app-task [id]="item.id" [text]="item.text" (taskDeletedEvent)="deleteTask($event)"/>
         }
     </ul>
     <form [formGroup]="stringControls" (ngSubmit)="addString()">
-        <input type="text" formControlName="newString">
+        <input type="text" formControlName="newTask">
         <button type="submit">Insertar</button>
     </form>
 </div>
