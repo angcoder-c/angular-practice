@@ -1,0 +1,12 @@
+<div [style]="{ 'color': color() }">
+    <h2>Clock</h2>
+    <p>{{ color() }}</p>
+    <p>Counter {{ this.counter() }}</p>
+    <button (click)="plus()">+ Hour</button>
+    <label for="x2-hours">x2 horas</label>
+    <input type="checkbox" id="x2-hours" [(ngModel)]="counterSelectorValue">
+    <input type="color" id="color-card" [defaultValue]="color()" [(ngModel)]="colorPicker">
+    <div>
+        <span>{{ timeVars().hours }}:{{ timeVars().minutes }}:{{ timeVars().seconds }} {{ timeVars().status }}</span>
+    </div>
+</div>

@@ -5,6 +5,7 @@ import { ListStringsComponent } from './components/list-strings/list-strings.com
 import { ShowHideStringComponent } from './components/show-hide-string/show-hide-string.component';
 import { ApplyCustomPipesComponent } from './components/apply-custom-pipes/apply-custom-pipes.component';
 import { CardParentComponent } from './components/card-parent/card-parent.component';
+import { ColorClockComponent } from './components/color-clock/color-clock.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ import { CardParentComponent } from './components/card-parent/card-parent.compon
     ListStringsComponent,
     ShowHideStringComponent,
     ApplyCustomPipesComponent,
-    CardParentComponent
+    CardParentComponent, 
+    ColorClockComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
