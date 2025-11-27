@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
-import { ColorClockComponent } from './components/color-clock/color-clock.component';
 import { ListStringsComponent } from './components/list-strings/list-strings.component';
+import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [
     {
         path: '',
         title: 'Angular Practice | Home',
-        component: ColorClockComponent
+        component: HomeComponent
     },
     {
         path: 'task',

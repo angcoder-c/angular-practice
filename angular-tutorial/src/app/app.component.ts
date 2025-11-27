@@ -12,12 +12,14 @@ import { ColorClockComponent } from './components/color-clock/color-clock.compon
   imports: [
     RouterOutlet,
     RouterLink,
+    /*
     PmButtonCounterComponent,
     ListStringsComponent,
     ShowHideStringComponent,
     ApplyCustomPipesComponent,
     CardParentComponent,
-    ColorClockComponent,
+    ColorClockComponent
+    */
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
